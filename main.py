@@ -45,14 +45,14 @@ twitch_miner = TwitchChannelPointsMiner(
             BET_wiN=Fore.MAGENTA                # Color allowed are: [BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET].
         ),
         telegram=Telegram(                                                          # You can omit or set to None if you don't want to receive updates on Telegram
-            chat_id=1234567890,                                                      # Chat ID to send messages @getmyid_bot
-            token="Token here",                          # Telegram API token @BotFather
+            chat_id=1136506803,                                                      # Chat ID to send messages @getmyid_bot
+            token="8446915127:AAFG_tCgfw9t20Tn7qfghyWo2gJwVdJeHRY",                          # Telegram API token @BotFather
             events=[Events.STREAMER_ONLINE, Events.STREAMER_OFFLINE,
                     Events.BET_LOSE, Events.CHAT_MENTION],                          # Only these events will be sent to the chat
             disable_notification=False,                                              # Revoke the notification (sound/vibration)
         ),
         discord=Discord(
-            webhook_api="https://discord.com/api/webhooks/",  # Discord Webhook URL
+            webhook_api="https://discord.com/api/webhooks/0123456789/0a1B2c3D4e5F6g7H8i9J",  # Discord Webhook URL
             events=[Events.STREAMER_ONLINE, Events.STREAMER_OFFLINE,
                     Events.BET_LOSE, Events.CHAT_MENTION],                                  # Only these events will be sent to the chat
         ),
@@ -108,10 +108,25 @@ twitch_miner = TwitchChannelPointsMiner(
 
 twitch_miner.mine(
     [
-       Streamer("Streamer1", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
-       Streamer("Streamer2", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
-       Streamer("Streamer3", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
-
+       Streamer("oisobaka", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("roryshiyo", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("LekkoApteka", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("oii_kawa", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("HenmiMori", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("taurosow", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("sanrx_x", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("batislav", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("Txao", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("bezp", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("antondump", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("jebaitedow", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("yavane4ka", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("alenkaa_98", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("soldatiik", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("kirillshuba", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("hardkil_tb", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("ow_esports", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("iLame", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True))
     ],                                  # Array of streamers (order = priority)
     followers=False,                    # Automatic download the list of your followers
     followers_order=FollowersOrder.ASC  # Sort the followers list by follow date. ASC or DESC
