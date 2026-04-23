@@ -108,7 +108,7 @@ twitch_miner = TwitchChannelPointsMiner(
 
 twitch_miner.mine(
     [
-       Streamer("oisobaka", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
+       Streamer("oisadako", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
        Streamer("roryshiyo", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
        Streamer("LekkoApteka", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
        Streamer("oii_kawa", settings=StreamerSettings(follow_raid=True , claim_drops=True  , watch_streak=True)),
